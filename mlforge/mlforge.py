@@ -553,9 +553,10 @@ class Pipeline:
             Dictionary containing the parameters to be passed to the method.
 
         """
+        pretty_params = self._pretty_as_text(method_parameters, "          > ")
         self._m(
             f"        > Into '{self._build_params.__name__}' with "
-            f"method_parameters='\n{self._pretty_as_text(method_parameters, "          > ")}"
+            f"method_parameters='\n{pretty_params}'"
             f"          and method_arguments='{method_arguments}'")
 
         params = {}
