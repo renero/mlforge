@@ -14,6 +14,7 @@ Pipeline class to define and run several execution steps.
 # pylint: disable=W0212:protected-access
 
 import importlib
+import io
 import inspect
 import logging
 import time
@@ -22,11 +23,14 @@ import typing
 from dataclasses import asdict, dataclass
 from importlib import import_module
 from random import getrandbits
+from textwrap import indent
 from typing import Any, Callable, List, Union
 
 import yaml
 from rich import print as rp
 from rich.columns import Columns
+from rich.console import Console
+from rich.pretty import Pretty
 from rich.table import Table
 
 from mlforge.logconfig import LogConfig
@@ -242,7 +246,7 @@ class Pipeline:
                     f"    > attribute_name: {stage.attribute_name}\n"
                     f"    > method_name: {stage.method_name}\n"
                     f"    > class_name: {stage.class_name}\n"
-                    f"    > arguments: {stage.arguments}")
+                    f"    > arguments: {self._pretty_as_text(stage.arguments, '      ')}", end="")
             # Check if step_name is a method within Host, or in globals
             stage._method_call = self._get_callable_method(
                 stage.method_name, stage.class_name)
@@ -551,8 +555,8 @@ class Pipeline:
         """
         self._m(
             f"        > Into '{self._build_params.__name__}' with "
-            f"method_parameters='{method_parameters}', "
-            f"method_arguments='{method_arguments}'")
+            f"method_parameters='\n{self._pretty_as_text(method_parameters, "          > ")}"
+            f"          and method_arguments='{method_arguments}'")
 
         params = {}
         for parameter, default_value in method_parameters.items():
@@ -575,7 +579,7 @@ class Pipeline:
                         if hasattr(self.host, method_arguments[parameter]):
                             params[parameter] = getattr(
                                 self.host, method_arguments[parameter])
-                        else: # It's a literal string
+                        else:  #  It's a literal string
                             params[parameter] = method_arguments[parameter]
                     # XXX experimental
                     else:
@@ -852,17 +856,36 @@ class Pipeline:
             return
         self.pbar.remove(self.description)
 
-    def _m(self, m: str):
+    def _m(self, m: str, end="\n"):
         """
         Printout message if verbose is set to True, and log.debug the message.
         """
         if self.verbose:
-            print(m)
+            print(m, end=end)
         m = m.replace('  ', '')
         m = m.replace('> ', '')
         # Remove any newline character from the message
         m = m.replace('\n', '')
         self.logger.debug(m)
+
+    def _pretty_as_text(self, obj, prefix="") -> str:
+        """
+        This method returns a rich pretty-printed string representation of an object.
+        Parameters
+        ----------
+        obj: Any
+            The object to be pretty-printed.
+        prefix: str
+            The prefix to be added to each line of the pretty-printed string.
+
+        Returns
+        -------
+        pretty_str: str
+            The pretty-printed string representation of the object.
+        """
+        console = Console(record=True, width=100, file=io.StringIO())
+        console.print(Pretty(obj, expand_all=True))
+        return indent(console.export_text(styles=True), prefix)
 
     def contains_method(self, method_name: str, exact_match: bool = False) -> bool:
         """
@@ -994,7 +1017,7 @@ class Pipeline:
 
         return None
 
-    def all_argument_values(self, attribute_name:str):
+    def all_argument_values(self, attribute_name: str):
         """
         This method returns a list with all values of the given attribute
         in the pipeline. If the attribute is not found, the method returns None.
@@ -1011,7 +1034,8 @@ class Pipeline:
         """
         assert attribute_name is not None, "attribute_name must not be None"
         assert self.pipeline != [], "pipeline must be initialized"
-        assert isinstance(attribute_name, str), "attribute_name must be a string"
+        assert isinstance(
+            attribute_name, str), "attribute_name must be a string"
 
         attribute_values = []
         for stage in self.pipeline:
