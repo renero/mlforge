@@ -38,7 +38,7 @@ jobs:
 
       # Run tests
       - name: Run tests
-        run: python -m pytest --cov=mlforge mlforge/tests/
+        run: python -m pytest --cov=mlforge tests/
 
       # Upload coverage reports to Codecov
       - name: Upload coverage reports to Codecov
