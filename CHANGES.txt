@@ -1,3 +1,7 @@
+0.2.3
+-----
+- Parameters printouts now use `Pretty()` from `rich` library.
+
 0.2.1a
 ------
 - Arguments can now be "strings" that are interpreted also as literals if not found

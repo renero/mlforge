@@ -18,7 +18,7 @@ import string
 
 
 sys.path.insert(0, os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '../mlforge')))
+    os.path.join(os.path.dirname(__file__), '..')))
 
 from mlforge.mlforge import Pipeline, Stage
 
