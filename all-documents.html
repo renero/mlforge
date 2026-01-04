@@ -6,7 +6,7 @@
   <head>
     
     <title>All Documents</title>
-    <meta name="generator" content="pydoctor 24.3.3"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="apidocs.css" />
     <link rel="stylesheet" type="text/css" href="extra.css" />
+    
 </head>
   <body>
     
@@ -48,7 +49,7 @@
             
             <span class="input-group-btn">
               <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
-              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
             </span>
           </div>
         </div>
@@ -72,39 +73,6 @@
             <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
         </noscript>
 
-        <div class="hint" id="search-help-box">
-          <p class="rst-last">
-      
-            Search bar offers the following options:
-            <ul>   
-                <li>
-                  <strong>Term presence.</strong> The below example searches for documents that 
-                    must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
-                </li> 
-
-                <li>
-                  <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
-                </li> 
-
-                <li>
-                  <strong>Search in specific fields.</strong> The following search matches all objects 
-                  in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
-
-                  <p>
-                    Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
-                    Last two fields are only applicable if "search in docstrings" is enabled.
-                  </p>
-                </li>
-
-                <li>
-                  <strong>Fuzzy matches.</strong> The following search matches all documents 
-                  that have a word within 1 edit distance of “foo”: <code>foo~1</code>
-                </li>
-            </ul>
-
-          </p>
-        </div>
-
         <div id="search-status"> </div>
 
         <div class="warning" id="search-warn-box" style="display: none;">
@@ -115,8 +83,8 @@
           <!-- Filled dynamically by JS -->
         </table>
         
-        <div style="margin-top: 8px;">
-          <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
         </div>
       </div>
 
@@ -139,7 +107,7 @@
             <div class="type">Package</div>
             <div class="kind">Package</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">No package docstring; 0/1 variable, 2/4 modules documented</span></div>
+            <div class="summary"><span class="rst-undocumented">No package docstring; 0/1 variable, 1/4 module documented</span></div>
           </li><li id="mlforge._version">
             
             <div class="fullName">mlforge<wbr></wbr>._version</div>
@@ -147,7 +115,7 @@
             <div class="type">Module</div>
             <div class="kind">Module</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.logconfig">
             
             <div class="fullName">mlforge<wbr></wbr>.logconfig</div>
@@ -163,7 +131,7 @@
             <div class="type">Module</div>
             <div class="kind">Module</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary">Pipeline class to define and run several execution steps. @author: Jesús Renero</div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar</div>
@@ -171,7 +139,7 @@
             <div class="type">Module</div>
             <div class="kind">Module</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.__version__">
             
             <div class="fullName">mlforge<wbr></wbr>.__version__</div>
@@ -179,7 +147,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.logconfig.LogConfig">
             
             <div class="fullName">mlforge<wbr></wbr>.logconfig<wbr></wbr>.<wbr></wbr>Log<wbr></wbr>Config</div>
@@ -203,7 +171,7 @@
             <div class="type">Class</div>
             <div class="kind">Class</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.Singleton._instances">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Singleton<wbr></wbr>._instances</div>
@@ -211,7 +179,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Class Variable</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.Singleton.__call__">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Singleton<wbr></wbr>.__call__</div>
@@ -219,7 +187,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.Singleton.clear">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Singleton<wbr></wbr>.clear</div>
@@ -227,7 +195,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.Entry">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Entry</div>
@@ -235,7 +203,7 @@
             <div class="type">Class</div>
             <div class="kind">Class</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.Entry.id">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Entry<wbr></wbr>.id</div>
@@ -243,7 +211,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.Entry.name">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Entry<wbr></wbr>.name</div>
@@ -251,7 +219,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.Entry.steps">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Entry<wbr></wbr>.steps</div>
@@ -259,7 +227,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.Entry.progress">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Entry<wbr></wbr>.progress</div>
@@ -267,7 +235,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar</div>
@@ -275,7 +243,7 @@
             <div class="type">Class</div>
             <div class="kind">Class</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar.stack">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>.stack</div>
@@ -283,7 +251,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Class Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar.progress">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>.progress</div>
@@ -291,7 +259,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Instance Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar.__init__">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>.__init__</div>
@@ -299,7 +267,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar.verbose">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>.verbose</div>
@@ -307,7 +275,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Instance Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar.max_descr_len">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>.max<wbr></wbr>_descr<wbr></wbr>_len</div>
@@ -315,7 +283,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Instance Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar.main_task">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>.main<wbr></wbr>_task</div>
@@ -323,7 +291,7 @@
             <div class="type">Attribute</div>
             <div class="kind">Instance Variable</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar.start_subtask">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>.start<wbr></wbr>_subtask</div>
@@ -331,7 +299,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar.update_subtask">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>.update<wbr></wbr>_subtask</div>
@@ -339,7 +307,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar.remove">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>.remove</div>
@@ -347,7 +315,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar._upper_steps">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>._upper<wbr></wbr>_steps</div>
@@ -355,7 +323,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar._get_idx">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>._get<wbr></wbr>_idx</div>
@@ -363,7 +331,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar._get_element">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>._get<wbr></wbr>_element</div>
@@ -371,7 +339,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar._get_element_by_name">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>._get<wbr></wbr>_element<wbr></wbr>_by<wbr></wbr>_name</div>
@@ -379,7 +347,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar._log_advance">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>._log<wbr></wbr>_advance</div>
@@ -387,7 +355,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar._log_update">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>._log<wbr></wbr>_update</div>
@@ -395,7 +363,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar._reset_if_completed">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>._reset<wbr></wbr>_if<wbr></wbr>_completed</div>
@@ -403,7 +371,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.ProgBar._m">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.<wbr></wbr>Prog<wbr></wbr>Bar<wbr></wbr>._m</div>
@@ -411,7 +379,7 @@
             <div class="type">Function</div>
             <div class="kind">Method</div>
             <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li><li id="mlforge.progbar.main">
             
             <div class="fullName">mlforge<wbr></wbr>.progbar<wbr></wbr>.main</div>
@@ -419,431 +387,7 @@
             <div class="type">Function</div>
             <div class="kind">Function</div>
             <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage</div>
-            <div class="url">mlforge.mlforge.Stage.html</div>
-            <div class="type">Class</div>
-            <div class="kind">Class</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage._num">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>._num</div>
-            <div class="url">mlforge.mlforge.Stage.html#_num</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage._id">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>._id</div>
-            <div class="url">mlforge.mlforge.Stage.html#_id</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage.attribute_name">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>.attribute<wbr></wbr>_name</div>
-            <div class="url">mlforge.mlforge.Stage.html#attribute_name</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage.method_name">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>.method<wbr></wbr>_name</div>
-            <div class="url">mlforge.mlforge.Stage.html#method_name</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage._method_call">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>._method<wbr></wbr>_call</div>
-            <div class="url">mlforge.mlforge.Stage.html#_method_call</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage.class_name">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>.class<wbr></wbr>_name</div>
-            <div class="url">mlforge.mlforge.Stage.html#class_name</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage._parameters">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>._parameters</div>
-            <div class="url">mlforge.mlforge.Stage.html#_parameters</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage.arguments">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>.arguments</div>
-            <div class="url">mlforge.mlforge.Stage.html#arguments</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage._timestamp_start">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>._timestamp<wbr></wbr>_start</div>
-            <div class="url">mlforge.mlforge.Stage.html#_timestamp_start</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage._timestamp_end">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>._timestamp<wbr></wbr>_end</div>
-            <div class="url">mlforge.mlforge.Stage.html#_timestamp_end</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Stage._duration">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Stage<wbr></wbr>._duration</div>
-            <div class="url">mlforge.mlforge.Stage.html#_duration</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Class Variable</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline</div>
-            <div class="url">mlforge.mlforge.Pipeline.html</div>
-            <div class="type">Class</div>
-            <div class="kind">Class</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Pipeline class allows to define several execution steps to run sequentially. Pipeline is initialized with a host object that contains the parameters to be used in the execution steps. At each step, the pipeline can call either a function or a class...</div>
-          </li><li id="mlforge.mlforge.Pipeline.__init__">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.__init__</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#__init__</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.caller_module">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.caller<wbr></wbr>_module</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#caller_module</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.caller_filename">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.caller<wbr></wbr>_filename</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#caller_filename</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.host">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.host</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#host</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.pipeline">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.pipeline</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#pipeline</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.verbose">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.verbose</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#verbose</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.prog_bar">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.prog<wbr></wbr>_bar</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#prog_bar</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.description">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.description</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#description</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.subtask">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.subtask</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#subtask</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.silent">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.silent</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#silent</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.attributes_">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.attributes_</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#attributes_</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.objects_">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.objects_</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#objects_</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.pbar">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.pbar</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#pbar</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.run_">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.run_</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#run_</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.logger">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.logger</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#logger</div>
-            <div class="type">Attribute</div>
-            <div class="kind">Instance Variable</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary"><span class="undocumented">Undocumented</span></div>
-          </li><li id="mlforge.mlforge.Pipeline.close">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.close</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#close</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Close the pipeline.</div>
-          </li><li id="mlforge.mlforge.Pipeline.from_list">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.from<wbr></wbr>_list</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#from_list</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Load a pipeline from a list of steps.</div>
-          </li><li id="mlforge.mlforge.Pipeline.from_config">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.from<wbr></wbr>_config</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#from_config</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Load a pipeline from a YAML configuration file.</div>
-          </li><li id="mlforge.mlforge.Pipeline.add_stages">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.add<wbr></wbr>_stages</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#add_stages</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Add stages to the pipeline.</div>
-          </li><li id="mlforge.mlforge.Pipeline.run">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.run</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#run</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Run the pipeline.</div>
-          </li><li id="mlforge.mlforge.Pipeline._get_step_components">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._get<wbr></wbr>_step<wbr></wbr>_components</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_get_step_components</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Get the components of a forge step, in a way that can be used to invoke it.</div>
-          </li><li id="mlforge.mlforge.Pipeline._get_method_signature">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._get<wbr></wbr>_method<wbr></wbr>_signature</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_get_method_signature</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Get the signature of a method.</div>
-          </li><li id="mlforge.mlforge.Pipeline._parse_step">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._parse<wbr></wbr>_step</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_parse_step</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Parse a forge step to know who is who. The options are</div>
-          </li><li id="mlforge.mlforge.Pipeline._get_callable_method">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._get<wbr></wbr>_callable<wbr></wbr>_method</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_get_callable_method</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Given a method name, get the callable method from the <code><a href="mlforge.mlforge.Pipeline.html#host" class="internal-link" title="mlforge.mlforge.Pipeline.host">host</a></code> object, this very object, or the globals. If the method is not found, return None.</div>
-          </li><li id="mlforge.mlforge.Pipeline._build_params">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._build<wbr></wbr>_params</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_build_params</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">This method builds the parameters to be passed to the method, using default values or values from the host object.</div>
-          </li><li id="mlforge.mlforge.Pipeline._run_step">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._run<wbr></wbr>_step</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_run_step</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Run a step of the pipeline.</div>
-          </li><li id="mlforge.mlforge.Pipeline.show">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.show</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#show</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Show the pipeline. Print cards with the steps and the description of each step.</div>
-          </li><li id="mlforge.mlforge.Pipeline.duration">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.duration</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#duration</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">This method displays the duration of each stage of the pipeline, and the total duration of the pipeline. Each stage duration is displayed in seconds or in milliseconds, depending on the duration. Each line represents a stage and the last line represents the total duration of the pipeline.</div>
-          </li><li id="mlforge.mlforge.Pipeline.len">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.len</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#len</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">Return the number of steps in the pipeline.</div>
-          </li><li id="mlforge.mlforge.Pipeline._process_config">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._process<wbr></wbr>_config</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_process_config</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Process the YAML configuration and convert it into a list of pipeline steps.</div>
-          </li><li id="mlforge.mlforge.Pipeline.get_attribute">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.get<wbr></wbr>_attribute</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#get_attribute</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">This method returns the value of the attribute with the given name. If the pipeline has not been run, the attribute will not exist and the method will return None. If the attribute does not exist, the method will raise an AttributeError.</div>
-          </li><li id="mlforge.mlforge.Pipeline._pbar_create">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._pbar<wbr></wbr>_create</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_pbar_create</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Creates a progress bar using the tqdm library.</div>
-          </li><li id="mlforge.mlforge.Pipeline._pbar_update">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._pbar<wbr></wbr>_update</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_pbar_update</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Update the progress bar by the specified step.</div>
-          </li><li id="mlforge.mlforge.Pipeline._pbar_close">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._pbar<wbr></wbr>_close</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_pbar_close</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Close the progress bar.</div>
-          </li><li id="mlforge.mlforge.Pipeline._m">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>._m</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#_m</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PRIVATE</div>
-            <div class="summary">Printout message if verbose is set to True, and log.debug the message.</div>
-          </li><li id="mlforge.mlforge.Pipeline.contains_method">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.contains<wbr></wbr>_method</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#contains_method</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">This method checks if the given method is part of the pipeline.</div>
-          </li><li id="mlforge.mlforge.Pipeline.contains_class">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.contains<wbr></wbr>_class</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#contains_class</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">This method checks if the given class is part of the pipeline.</div>
-          </li><li id="mlforge.mlforge.Pipeline.contains_argument">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.contains<wbr></wbr>_argument</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#contains_argument</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">This method checks if the given attribute is part of the pipeline.</div>
-          </li><li id="mlforge.mlforge.Pipeline.get_argument_value">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.get<wbr></wbr>_argument<wbr></wbr>_value</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#get_argument_value</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">This method returns the value of the given attribute.</div>
-          </li><li id="mlforge.mlforge.Pipeline.all_argument_values">
-            
-            <div class="fullName">mlforge<wbr></wbr>.mlforge<wbr></wbr>.<wbr></wbr>Pipeline<wbr></wbr>.all<wbr></wbr>_argument<wbr></wbr>_values</div>
-            <div class="url">mlforge.mlforge.Pipeline.html#all_argument_values</div>
-            <div class="type">Function</div>
-            <div class="kind">Method</div>
-            <div class="privacy">PUBLIC</div>
-            <div class="summary">This method returns a list with all values of the given attribute in the pipeline. If the attribute is not found, the method returns None.</div>
+            <div class="summary"><span class="rst-undocumented">Undocumented</span></div>
           </li>
        </ul>
     </div>

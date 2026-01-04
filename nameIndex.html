@@ -7,7 +7,7 @@
   <head>
     
     <title>Index of Names</title>
-    <meta name="generator" content="pydoctor 24.3.3"> 
+    <meta name="generator" content="pydoctor 25.10.1"> 
         
     </meta>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="apidocs.css" />
     <link rel="stylesheet" type="text/css" href="extra.css" />
+    
 </head>
 
   <body>
@@ -52,7 +53,7 @@
             
             <span class="input-group-btn">
               <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
-              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
             </span>
           </div>
         </div>
@@ -76,39 +77,6 @@
             <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
         </noscript>
 
-        <div class="hint" id="search-help-box">
-          <p class="rst-last">
-      
-            Search bar offers the following options:
-            <ul>   
-                <li>
-                  <strong>Term presence.</strong> The below example searches for documents that 
-                    must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
-                </li> 
-
-                <li>
-                  <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
-                </li> 
-
-                <li>
-                  <strong>Search in specific fields.</strong> The following search matches all objects 
-                  in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
-
-                  <p>
-                    Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
-                    Last two fields are only applicable if "search in docstrings" is enabled.
-                  </p>
-                </li>
-
-                <li>
-                  <strong>Fuzzy matches.</strong> The following search matches all documents 
-                  that have a word within 1 edit distance of “foo”: <code>foo~1</code>
-                </li>
-            </ul>
-
-          </p>
-        </div>
-
         <div id="search-status"> </div>
 
         <div class="warning" id="search-warn-box" style="display: none;">
@@ -119,8 +87,8 @@
           <!-- Filled dynamically by JS -->
         </table>
         
-        <div style="margin-top: 8px;">
-          <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
         </div>
       </div>
 
@@ -134,81 +102,36 @@
 
       <div class="page-header">
         <h1>Index of Names</h1>
-        <div id="showPrivate">
+        <div id="show-private">
           <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
         </div>
       </div>
 
       
-        <a name="A">
-          
-        </a>
-        <h2>A</h2>
-        <p class="letterlinks">A - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>add_stages - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#add_stages" class="internal-link">mlforge.mlforge.Pipeline.add_stages</a></code></li><li>all_argument_values - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#all_argument_values" class="internal-link">mlforge.mlforge.Pipeline.all_argument_values</a></code></li><li>arguments - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#arguments" class="internal-link">mlforge.mlforge.Stage.arguments</a></code></li><li>attribute_name - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#attribute_name" class="internal-link">mlforge.mlforge.Stage.attribute_name</a></code></li><li>attributes_ - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#attributes_" class="internal-link">mlforge.mlforge.Pipeline.attributes_</a></code></li>
-        </ul>
-      
         <a name="C">
           
         </a>
         <h2>C</h2>
-        <p class="letterlinks"><a href="#A">A</a> - C - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>caller_filename - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#caller_filename" class="internal-link">mlforge.mlforge.Pipeline.caller_filename</a></code></li><li>caller_module - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#caller_module" class="internal-link">mlforge.mlforge.Pipeline.caller_module</a></code></li><li>class_name - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#class_name" class="internal-link">mlforge.mlforge.Stage.class_name</a></code></li><li>clear - <code data-type="Method"><a href="mlforge.progbar.Singleton.html#clear" class="internal-link">mlforge.progbar.Singleton.clear</a></code></li><li>close - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#close" class="internal-link">mlforge.mlforge.Pipeline.close</a></code></li><li>contains_argument - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#contains_argument" class="internal-link">mlforge.mlforge.Pipeline.contains_argument</a></code></li><li>contains_class - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#contains_class" class="internal-link">mlforge.mlforge.Pipeline.contains_class</a></code></li><li>contains_method - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#contains_method" class="internal-link">mlforge.mlforge.Pipeline.contains_method</a></code></li>
-        </ul>
-      
-        <a name="D">
-          
-        </a>
-        <h2>D</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - D - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>description - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#description" class="internal-link">mlforge.mlforge.Pipeline.description</a></code></li><li>duration - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#duration" class="internal-link">mlforge.mlforge.Pipeline.duration</a></code></li>
+        <p class="letterlinks">C - <a href="#E">E</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
+        <ul id="summary-tree">
+          <li>clear - <code data-type="Method"><a href="mlforge.progbar.Singleton.html#clear" class="internal-link">mlforge.progbar.Singleton.clear</a></code></li>
         </ul>
       
         <a name="E">
           
         </a>
         <h2>E</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - E - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
+        <p class="letterlinks"><a href="#C">C</a> - E - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
+        <ul id="summary-tree">
           <li>Entry - <code data-type="Class"><a href="mlforge.progbar.Entry.html" class="internal-link">mlforge.progbar.Entry</a></code></li>
-        </ul>
-      
-        <a name="F">
-          
-        </a>
-        <h2>F</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - F - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>from_config - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#from_config" class="internal-link">mlforge.mlforge.Pipeline.from_config</a></code></li><li>from_list - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#from_list" class="internal-link">mlforge.mlforge.Pipeline.from_list</a></code></li>
-        </ul>
-      
-        <a name="G">
-          
-        </a>
-        <h2>G</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - G - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>get_argument_value - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#get_argument_value" class="internal-link">mlforge.mlforge.Pipeline.get_argument_value</a></code></li><li>get_attribute - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#get_attribute" class="internal-link">mlforge.mlforge.Pipeline.get_attribute</a></code></li>
-        </ul>
-      
-        <a name="H">
-          
-        </a>
-        <h2>H</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - H - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>host - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#host" class="internal-link">mlforge.mlforge.Pipeline.host</a></code></li>
         </ul>
       
         <a name="I">
           
         </a>
         <h2>I</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - I - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
+        <p class="letterlinks"><a href="#C">C</a> - <a href="#E">E</a> - I - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
+        <ul id="summary-tree">
           <li>id - <code data-type="Class Variable"><a href="mlforge.progbar.Entry.html#id" class="internal-link">mlforge.progbar.Entry.id</a></code></li>
         </ul>
       
@@ -216,71 +139,62 @@
           
         </a>
         <h2>L</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - L - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>len - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#len" class="internal-link">mlforge.mlforge.Pipeline.len</a></code></li><li>LogConfig - <code data-type="Class"><a href="mlforge.logconfig.LogConfig.html" class="internal-link">mlforge.logconfig.LogConfig</a></code></li><li>logconfig - <code data-type="Module"><a href="mlforge.logconfig.html" class="internal-link">mlforge.logconfig</a></code></li><li>logger - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#logger" class="internal-link">mlforge.mlforge.Pipeline.logger</a></code></li>
+        <p class="letterlinks"><a href="#C">C</a> - <a href="#E">E</a> - <a href="#I">I</a> - L - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
+        <ul id="summary-tree">
+          <li>LogConfig - <code data-type="Class"><a href="mlforge.logconfig.LogConfig.html" class="internal-link">mlforge.logconfig.LogConfig</a></code></li><li>logconfig - <code data-type="Module"><a href="mlforge.logconfig.html" class="internal-link">mlforge.logconfig</a></code></li>
         </ul>
       
         <a name="M">
           
         </a>
         <h2>M</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - M - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>main - <code data-type="Function"><a href="mlforge.progbar.html#main" class="internal-link">mlforge.progbar.main</a></code></li><li>main_task - <code data-type="Instance Variable"><a href="mlforge.progbar.ProgBar.html#main_task" class="internal-link">mlforge.progbar.ProgBar.main_task</a></code></li><li>max_descr_len - <code data-type="Instance Variable"><a href="mlforge.progbar.ProgBar.html#max_descr_len" class="internal-link">mlforge.progbar.ProgBar.max_descr_len</a></code></li><li>method_name - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#method_name" class="internal-link">mlforge.mlforge.Stage.method_name</a></code></li><li>mlforge<ul><li><code data-type="Package"><a href="index.html" class="internal-link">mlforge</a></code></li><li><code data-type="Module"><a href="mlforge.mlforge.html" class="internal-link">mlforge.mlforge</a></code></li></ul></li>
+        <p class="letterlinks"><a href="#C">C</a> - <a href="#E">E</a> - <a href="#I">I</a> - <a href="#L">L</a> - M - <a href="#N">N</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
+        <ul id="summary-tree">
+          <li>main - <code data-type="Function"><a href="mlforge.progbar.html#main" class="internal-link">mlforge.progbar.main</a></code></li><li>main_task - <code data-type="Instance Variable"><a href="mlforge.progbar.ProgBar.html#main_task" class="internal-link">mlforge.progbar.ProgBar.main_task</a></code></li><li>max_descr_len - <code data-type="Instance Variable"><a href="mlforge.progbar.ProgBar.html#max_descr_len" class="internal-link">mlforge.progbar.ProgBar.max_descr_len</a></code></li><li>mlforge<ul><li><code data-type="Package"><a href="index.html" class="internal-link">mlforge</a></code></li><li><code data-type="Module"><a href="mlforge.mlforge.html" class="internal-link">mlforge.mlforge</a></code></li></ul></li>
         </ul>
       
         <a name="N">
           
         </a>
         <h2>N</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - N - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
+        <p class="letterlinks"><a href="#C">C</a> - <a href="#E">E</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - N - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
+        <ul id="summary-tree">
           <li>name - <code data-type="Class Variable"><a href="mlforge.progbar.Entry.html#name" class="internal-link">mlforge.progbar.Entry.name</a></code></li>
-        </ul>
-      
-        <a name="O">
-          
-        </a>
-        <h2>O</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - O - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>objects_ - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#objects_" class="internal-link">mlforge.mlforge.Pipeline.objects_</a></code></li>
         </ul>
       
         <a name="P">
           
         </a>
         <h2>P</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - P - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>pbar - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#pbar" class="internal-link">mlforge.mlforge.Pipeline.pbar</a></code></li><li>Pipeline - <code data-type="Class"><a href="mlforge.mlforge.Pipeline.html" class="internal-link">mlforge.mlforge.Pipeline</a></code></li><li>pipeline - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#pipeline" class="internal-link">mlforge.mlforge.Pipeline.pipeline</a></code></li><li>prog_bar - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#prog_bar" class="internal-link">mlforge.mlforge.Pipeline.prog_bar</a></code></li><li>ProgBar - <code data-type="Class"><a href="mlforge.progbar.ProgBar.html" class="internal-link">mlforge.progbar.ProgBar</a></code></li><li>progbar - <code data-type="Module"><a href="mlforge.progbar.html" class="internal-link">mlforge.progbar</a></code></li><li>progress<ul><li><code data-type="Class Variable"><a href="mlforge.progbar.Entry.html#progress" class="internal-link">mlforge.progbar.Entry.progress</a></code></li><li><code data-type="Instance Variable"><a href="mlforge.progbar.ProgBar.html#progress" class="internal-link">mlforge.progbar.ProgBar.progress</a></code></li></ul></li>
+        <p class="letterlinks"><a href="#C">C</a> - <a href="#E">E</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - P - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
+        <ul id="summary-tree">
+          <li>ProgBar - <code data-type="Class"><a href="mlforge.progbar.ProgBar.html" class="internal-link">mlforge.progbar.ProgBar</a></code></li><li>progbar - <code data-type="Module"><a href="mlforge.progbar.html" class="internal-link">mlforge.progbar</a></code></li><li>progress<ul><li><code data-type="Class Variable"><a href="mlforge.progbar.Entry.html#progress" class="internal-link">mlforge.progbar.Entry.progress</a></code></li><li><code data-type="Instance Variable"><a href="mlforge.progbar.ProgBar.html#progress" class="internal-link">mlforge.progbar.ProgBar.progress</a></code></li></ul></li>
         </ul>
       
         <a name="R">
           
         </a>
         <h2>R</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - R - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>remove - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#remove" class="internal-link">mlforge.progbar.ProgBar.remove</a></code></li><li>run - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#run" class="internal-link">mlforge.mlforge.Pipeline.run</a></code></li><li>run_ - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#run_" class="internal-link">mlforge.mlforge.Pipeline.run_</a></code></li>
+        <p class="letterlinks"><a href="#C">C</a> - <a href="#E">E</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#P">P</a> - R - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
+        <ul id="summary-tree">
+          <li>remove - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#remove" class="internal-link">mlforge.progbar.ProgBar.remove</a></code></li>
         </ul>
       
         <a name="S">
           
         </a>
         <h2>S</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - S - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>setup_logging - <code data-type="Static Method"><a href="mlforge.logconfig.LogConfig.html#setup_logging" class="internal-link">mlforge.logconfig.LogConfig.setup_logging</a></code></li><li>show - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#show" class="internal-link">mlforge.mlforge.Pipeline.show</a></code></li><li>silent - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#silent" class="internal-link">mlforge.mlforge.Pipeline.silent</a></code></li><li>Singleton - <code data-type="Class"><a href="mlforge.progbar.Singleton.html" class="internal-link">mlforge.progbar.Singleton</a></code></li><li>stack - <code data-type="Class Variable"><a href="mlforge.progbar.ProgBar.html#stack" class="internal-link">mlforge.progbar.ProgBar.stack</a></code></li><li>Stage - <code data-type="Class"><a href="mlforge.mlforge.Stage.html" class="internal-link">mlforge.mlforge.Stage</a></code></li><li>start_subtask - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#start_subtask" class="internal-link">mlforge.progbar.ProgBar.start_subtask</a></code></li><li>steps - <code data-type="Class Variable"><a href="mlforge.progbar.Entry.html#steps" class="internal-link">mlforge.progbar.Entry.steps</a></code></li><li>subtask - <code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#subtask" class="internal-link">mlforge.mlforge.Pipeline.subtask</a></code></li>
+        <p class="letterlinks"><a href="#C">C</a> - <a href="#E">E</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#P">P</a> - <a href="#R">R</a> - S - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#_">_</a></p>
+        <ul id="summary-tree">
+          <li>setup_logging - <code data-type="Static Method"><a href="mlforge.logconfig.LogConfig.html#setup_logging" class="internal-link">mlforge.logconfig.LogConfig.setup_logging</a></code></li><li>Singleton - <code data-type="Class"><a href="mlforge.progbar.Singleton.html" class="internal-link">mlforge.progbar.Singleton</a></code></li><li>stack - <code data-type="Class Variable"><a href="mlforge.progbar.ProgBar.html#stack" class="internal-link">mlforge.progbar.ProgBar.stack</a></code></li><li>start_subtask - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#start_subtask" class="internal-link">mlforge.progbar.ProgBar.start_subtask</a></code></li><li>steps - <code data-type="Class Variable"><a href="mlforge.progbar.Entry.html#steps" class="internal-link">mlforge.progbar.Entry.steps</a></code></li>
         </ul>
       
         <a name="U">
           
         </a>
         <h2>U</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - U - <a href="#V">V</a> - <a href="#_">_</a></p>
-        <ul id="summaryTree">
+        <p class="letterlinks"><a href="#C">C</a> - <a href="#E">E</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - U - <a href="#V">V</a> - <a href="#_">_</a></p>
+        <ul id="summary-tree">
           <li>update_subtask - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#update_subtask" class="internal-link">mlforge.progbar.ProgBar.update_subtask</a></code></li>
         </ul>
       
@@ -288,18 +202,18 @@
           
         </a>
         <h2>V</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - V - <a href="#_">_</a></p>
-        <ul id="summaryTree">
-          <li>verbose<ul><li><code data-type="Instance Variable"><a href="mlforge.mlforge.Pipeline.html#verbose" class="internal-link">mlforge.mlforge.Pipeline.verbose</a></code></li><li><code data-type="Instance Variable"><a href="mlforge.progbar.ProgBar.html#verbose" class="internal-link">mlforge.progbar.ProgBar.verbose</a></code></li></ul></li>
+        <p class="letterlinks"><a href="#C">C</a> - <a href="#E">E</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - V - <a href="#_">_</a></p>
+        <ul id="summary-tree">
+          <li>verbose - <code data-type="Instance Variable"><a href="mlforge.progbar.ProgBar.html#verbose" class="internal-link">mlforge.progbar.ProgBar.verbose</a></code></li>
         </ul>
       
         <a name="_">
           
         </a>
         <h2>_</h2>
-        <p class="letterlinks"><a href="#A">A</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - _</p>
-        <ul id="summaryTree">
-          <li>__call__ - <code data-type="Method"><a href="mlforge.progbar.Singleton.html#__call__" class="internal-link">mlforge.progbar.Singleton.__call__</a></code></li><li>__init__<ul><li><code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#__init__" class="internal-link">mlforge.mlforge.Pipeline.__init__</a></code></li><li><code data-type="Method"><a href="mlforge.progbar.ProgBar.html#__init__" class="internal-link">mlforge.progbar.ProgBar.__init__</a></code></li></ul></li><li>__version__ - <code data-type="Variable"><a href="index.html#__version__" class="internal-link">mlforge.__version__</a></code></li><li class="private">_build_params - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_build_params" class="internal-link">mlforge.mlforge.Pipeline._build_params</a></code></li><li class="private">_duration - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#_duration" class="internal-link">mlforge.mlforge.Stage._duration</a></code></li><li class="private">_get_callable_method - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_get_callable_method" class="internal-link">mlforge.mlforge.Pipeline._get_callable_method</a></code></li><li class="private">_get_element - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_get_element" class="internal-link">mlforge.progbar.ProgBar._get_element</a></code></li><li class="private">_get_element_by_name - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_get_element_by_name" class="internal-link">mlforge.progbar.ProgBar._get_element_by_name</a></code></li><li class="private">_get_idx - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_get_idx" class="internal-link">mlforge.progbar.ProgBar._get_idx</a></code></li><li class="private">_get_method_signature - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_get_method_signature" class="internal-link">mlforge.mlforge.Pipeline._get_method_signature</a></code></li><li class="private">_get_step_components - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_get_step_components" class="internal-link">mlforge.mlforge.Pipeline._get_step_components</a></code></li><li class="private">_id - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#_id" class="internal-link">mlforge.mlforge.Stage._id</a></code></li><li class="private">_instances - <code data-type="Class Variable"><a href="mlforge.progbar.Singleton.html#_instances" class="internal-link">mlforge.progbar.Singleton._instances</a></code></li><li class="private">_log_advance - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_log_advance" class="internal-link">mlforge.progbar.ProgBar._log_advance</a></code></li><li class="private">_log_update - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_log_update" class="internal-link">mlforge.progbar.ProgBar._log_update</a></code></li><li class="private">_m<ul><li class="private"><code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_m" class="internal-link">mlforge.mlforge.Pipeline._m</a></code></li><li class="private"><code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_m" class="internal-link">mlforge.progbar.ProgBar._m</a></code></li></ul></li><li class="private">_method_call - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#_method_call" class="internal-link">mlforge.mlforge.Stage._method_call</a></code></li><li class="private">_num - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#_num" class="internal-link">mlforge.mlforge.Stage._num</a></code></li><li class="private">_parameters - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#_parameters" class="internal-link">mlforge.mlforge.Stage._parameters</a></code></li><li class="private">_parse_step - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_parse_step" class="internal-link">mlforge.mlforge.Pipeline._parse_step</a></code></li><li class="private">_pbar_close - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_pbar_close" class="internal-link">mlforge.mlforge.Pipeline._pbar_close</a></code></li><li class="private">_pbar_create - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_pbar_create" class="internal-link">mlforge.mlforge.Pipeline._pbar_create</a></code></li><li class="private">_pbar_update - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_pbar_update" class="internal-link">mlforge.mlforge.Pipeline._pbar_update</a></code></li><li class="private">_process_config - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_process_config" class="internal-link">mlforge.mlforge.Pipeline._process_config</a></code></li><li class="private">_reset_if_completed - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_reset_if_completed" class="internal-link">mlforge.progbar.ProgBar._reset_if_completed</a></code></li><li class="private">_run_step - <code data-type="Method"><a href="mlforge.mlforge.Pipeline.html#_run_step" class="internal-link">mlforge.mlforge.Pipeline._run_step</a></code></li><li class="private">_timestamp_end - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#_timestamp_end" class="internal-link">mlforge.mlforge.Stage._timestamp_end</a></code></li><li class="private">_timestamp_start - <code data-type="Class Variable"><a href="mlforge.mlforge.Stage.html#_timestamp_start" class="internal-link">mlforge.mlforge.Stage._timestamp_start</a></code></li><li class="private">_upper_steps - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_upper_steps" class="internal-link">mlforge.progbar.ProgBar._upper_steps</a></code></li><li class="private">_version - <code data-type="Module"><a href="mlforge._version.html" class="internal-link">mlforge._version</a></code></li>
+        <p class="letterlinks"><a href="#C">C</a> - <a href="#E">E</a> - <a href="#I">I</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#P">P</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#U">U</a> - <a href="#V">V</a> - _</p>
+        <ul id="summary-tree">
+          <li>__call__ - <code data-type="Method"><a href="mlforge.progbar.Singleton.html#__call__" class="internal-link">mlforge.progbar.Singleton.__call__</a></code></li><li>__init__ - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#__init__" class="internal-link">mlforge.progbar.ProgBar.__init__</a></code></li><li>__version__ - <code data-type="Variable"><a href="index.html#__version__" class="internal-link">mlforge.__version__</a></code></li><li class="private">_get_element - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_get_element" class="internal-link">mlforge.progbar.ProgBar._get_element</a></code></li><li class="private">_get_element_by_name - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_get_element_by_name" class="internal-link">mlforge.progbar.ProgBar._get_element_by_name</a></code></li><li class="private">_get_idx - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_get_idx" class="internal-link">mlforge.progbar.ProgBar._get_idx</a></code></li><li class="private">_instances - <code data-type="Class Variable"><a href="mlforge.progbar.Singleton.html#_instances" class="internal-link">mlforge.progbar.Singleton._instances</a></code></li><li class="private">_log_advance - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_log_advance" class="internal-link">mlforge.progbar.ProgBar._log_advance</a></code></li><li class="private">_log_update - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_log_update" class="internal-link">mlforge.progbar.ProgBar._log_update</a></code></li><li class="private">_m - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_m" class="internal-link">mlforge.progbar.ProgBar._m</a></code></li><li class="private">_reset_if_completed - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_reset_if_completed" class="internal-link">mlforge.progbar.ProgBar._reset_if_completed</a></code></li><li class="private">_upper_steps - <code data-type="Method"><a href="mlforge.progbar.ProgBar.html#_upper_steps" class="internal-link">mlforge.progbar.ProgBar._upper_steps</a></code></li><li class="private">_version - <code data-type="Module"><a href="mlforge._version.html" class="internal-link">mlforge._version</a></code></li>
         </ul>
       
 
@@ -308,10 +222,10 @@
     <footer class="navbar navbar-default">
 
   
-  <div class="container">
+  <div class="container-fluid">
     <a href="index.html">API Documentation</a> for <a href="https://github.com/renero/mlforge" class="projecthome">MLForge</a>,
   generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
-    24.3.3 at 2024-11-06 10:11:22.
+    25.10.1 at 2026-01-04 12:59:15.
   </div>
 
   <!-- Search related scripts needs to be loaded at the end of HTML 
